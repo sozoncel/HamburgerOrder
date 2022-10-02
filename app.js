@@ -75,7 +75,7 @@ function servistepsisi() {
         patateskontrol = false;
     }
     else {
-        servistepsisi();
+        setTimeout(function () { servistepsisi(); }, 0000);
     }
 }
 function serviset() {

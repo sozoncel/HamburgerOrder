@@ -40,7 +40,6 @@ function azpismis(){
 }
 function tavuksec(){
     document.getElementById('Siparisdurumu')?.innerHTML = "Tavuk menünüz hazırlanıyor.";
-
     setTimeout(function() { servistepsisi(); }, 3000);
     
 }
@@ -63,11 +62,13 @@ function siparishazir(){
     setTimeout(function(){yenisiparis();},3000)
 }
 function servistepsisi(){
-    if(patateskontrol== true){
+    if(patateskontrol == true){
     document.getElementById('Siparisdurumu')?.innerHTML = "Soslarınız ve Ürünleriniz Servis Tepsisine Koyuluyor.";
     setTimeout(function(){serviset();},1000);
     patateskontrol=false;
-    }else{servistepsisi();}
+    }else{
+        setTimeout(function(){servistepsisi();},0000);
+    }
 }
 function serviset(){
     document.getElementById('Siparisdurumu')?.innerHTML = "Siparişinizi bir saniye sonra alabilirsiniz.";
